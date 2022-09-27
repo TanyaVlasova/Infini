@@ -1,2 +1,8 @@
 @import 'reset-css.scss';
 @import 'fonts.scss';
+
+* {
+    font: 400 16px/120% 'GT Walsheim Pro', sans-serif;
+}
+
+@import 'src/components/header/header.scss';

@@ -1,0 +1,19 @@
+header.header
+    nav.nav
+        button.menu-button Menu
+        ul.menu
+                li.menu__item
+                    a.menu__link(href="#") Products
+                li.menu__item
+                    a.menu__link(href="#") About
+                li.menu__item
+                    a.menu__link(href="#") Contact
+        a.favorites(href="#")
+            div.favorites__text Favorites
+            div.favorites__block
+                svg.favorites__img
+                    use(href="../../img/sprite.svg#heart")
+                span.favorites__counter 0
+        a.search(href="#")
+            svg.search__img
+                use(href="../../img/sprite.svg#search")
