@@ -1,5 +1,5 @@
 {
-    "name": "chimney",
+    "name": "infini",
     "version": "1.0.0",
     "description": "",
     "main": "gulpfile.js",
@@ -11,14 +11,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/TanyaVlasova/chimney.git"
+        "url": "git+https://github.com/TanyaVlasova/infini.git"
     },
     "author": "Tanya",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/TanyaVlasova/chimney/issues"
+        "url": "https://github.com/TanyaVlasova/infini/issues"
     },
-    "homepage": "https://github.com/TanyaVlasova/chimney#readme",
+    "homepage": "https://github.com/TanyaVlasova/infini#readme",
     "devDependencies": {
         "browser-sync": "^2.27.10",
         "del": "^6.1.0",
