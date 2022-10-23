@@ -8,7 +8,7 @@
 
 .slideshow__link{
     width: 200vw;
-    height: 65vmin;
+    height: 80vh;
     display: flex;
     margin: auto 0;
     background-color: #000;
@@ -52,17 +52,12 @@
 
 .slideshow__title{
     font-family: 'Prata', serif;
-    font-size: 200px;
-    position: fixed;
+    font-size: 170px;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    //animation: text-part 10s infinite ease-in-out;
-    /*background: no-repeat linear-gradient(90deg, #fff 50%, #000 50%);
-    background-clip: text;
-    background-position: 0;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
+    white-space: nowrap;
 }
 
 @keyframes move-slide{
@@ -182,18 +177,18 @@
 */
 @media (max-width: 1024px) {
     .slideshow__title{
-        font-size: 150px;
+        font-size: 130px;
     }
 }
 
 @media (max-width: 768px) {
     .slideshow__title{
-        font-size: 100px;
+        font-size: 80px;
     }
 }
 
 @media (max-width: 480px) {
     .slideshow__title{
-        font-size: 60px;
+        font-size: 50px;
     }
 }
