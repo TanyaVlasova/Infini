@@ -1,0 +1,30 @@
+.main{
+    &__slideshow,
+    &__possibilities,
+    &__values{
+        margin-bottom: 200px;
+    }
+
+    &__design{
+        margin-bottom: 300px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .main{
+        &__design{
+            margin-bottom: 200px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main{
+        &__slideshow,
+        &__design,
+        &__possibilities,
+        &__values{
+            margin-bottom: 100px;
+        }
+    }
+}

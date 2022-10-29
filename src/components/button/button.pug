@@ -1,0 +1,6 @@
+mixin button(text, jsClassName, className)
+    div.button-wrapper(class=jsClassName)
+        button.button(class=className) #{text}
+            span.arrow-right
+                svg.arrow-right__img
+                    use(href="img/sprite.svg#arrow-right")

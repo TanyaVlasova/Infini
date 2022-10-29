@@ -7,7 +7,8 @@ export const html = () => {
             pretty: true, 
             verbose: true})
         )
-        .pipe(app.plugins.replace('../', ''))
+        //.pipe(app.plugins.replace('../', ''))
+        //.pipe(app.plugins.replace('pug', 'html'))
         .pipe(
             app.plugins.if(
                 app.isBuild,

@@ -3,11 +3,12 @@ import { path } from "./gulp/config/path.js";
 import { plugins } from "./gulp/config/plugins.js";
 
 import ghPages from "gulp-gh-pages";
- 
+
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
     .pipe(ghPages());
 });
+
 
 global.app = {
     isBuild: process.argv.includes('--build'),

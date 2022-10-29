@@ -1,196 +1,67 @@
 .slideshow{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     position: relative;
     display: flex;
-}
 
-.slideshow__link{
-    width: 200vw;
-    height: 70vh;
-    display: flex;
-    margin: auto 0;
-    background-color: #000;
-}
-
-.slideshow__slide{
-    width: 100vw;
-    height: 100%;
-    margin-right: 100vw;
-    transform: translateX(100%);
-    position: relative;
-}
-
-.slideshow__image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.slideshow__slide::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    opacity: 0.2;
-}
-/*
-.slideshow__black{
-    position: absolute;
-    width: 100vw;
-    height: 100%;
-    background-color: #000;
-    transform: translateX(-50%);
-    animation: black-part 10s infinite ease-in-out;
-}
-*/
-
-.slideshow__title{
-    font-family: 'GT Sectra Fine', serif;
-    font-weight: 400;
-    font-size: 200px;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    //animation: text-part 10s infinite ease-in-out;
-    /*background: no-repeat linear-gradient(90deg, #fff 50%, #000 50%);
-    background-clip: text;
-    background-position: 0;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
-}
-
-@keyframes move-slide{
-    0%{
-        transform: translateX(100%);
+    &__link{
+        width: 200vw;
+        height: 70vh;
+        display: flex;
+        margin: auto 0;
+        background-color: #000;        
     }
-    20%{
-        transform: translateX(0);
+
+    &__slide{
+        width: 100vw;
+        height: 100%;
+        margin-right: 100vw;
+        transition: transform 800ms;
     }
-    80%{
-        transform: translateX(0);
+
+    &__image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
     }
-    100%{
-        transform: translateX(-100%);
+
+    &__title{
+        font-family: 'GT Sectra Fine', serif;
+        font-weight: 400;
+        font-size: 200px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
-@keyframes change-title{
-    0%{
-
-    }
-    100%{
-        
+@media (max-width: 1280px) {
+    .slideshow{
+        margin-top: 40px;
     }
 }
 
-/*
-@keyframes text-part{
-    0%{
-        opacity: 1;
-    }
-    30%{
-        opacity: 1;
-    }
-    32%{
-        opacity: 0;
-    }
-    37%{
-        opacity: 0;
-    }
-    37.01%{
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    80%{
-        opacity: 1;
-    }
-    82%{
-        opacity: 0;
-    }
-    87%{
-        opacity: 0;
-    }
-    87.01%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-@keyframes black-part{
-    0%{
-        transform: skewX(0.1deg) translateX(-50%);
-    }
-    30%{
-        transform: skewX(0.1deg) translateX(-50%);
-    }
-    37%{
-        transform: skewX(0.1deg) translateX(-100%);
-    }
-    37.01%{
-        transform: skewX(0.1deg) translateX(100%);
-    }
-    50%{
-        transform: skewX(0.1deg) translateX(-50%);
-    }
-    80%{
-        transform: skewX(0.1deg) translateX(-50%);
-    }
-    87%{
-        transform: skewX(0.1deg) translateX(-100%);
-    }
-    87.01%{
-        transform: skewX(0.1deg) translateX(100%);
-    }
-    100%{
-        transform: skewX(0.1deg) translateX(-50%);
-    }
-}
-
-@keyframes image-part{
-    0%{
-        transform: translateX(0);
-    }
-    30%{
-        transform: translateX(0);
-    }
-    50%{
-        transform: translateX(-200%);
-    }
-    80%{
-        transform: translateX(-200%);
-    }
-    87%{
-        transform: translateX(-300%);
-    }
-    87.01%{
-        transform: translateX(100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-*/
 @media (max-width: 1024px) {
-    .slideshow__title{
-        font-size: 150px;
+    .slideshow{
+        margin-top: 60px;
+
+        &__title{
+            font-size: 150px;
+        }
     }
 }
 
 @media (max-width: 768px) {
-    .slideshow__title{
-        font-size: 100px;
+    .slideshow{
+        margin-top: 40px;
+
+        &__title{
+            font-size: 100px;
+        }
     }
 }
 
