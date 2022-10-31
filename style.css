@@ -63,21 +63,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   font-size: normal;
   font-display: swap;
-  src: url(../fonts/GTWalsheimPro-Light.ttf);
+  src: url(fonts/GT-WalsheimPro-Light.ttf);
 }
 @font-face {
   font-family: "GT Walsheim Pro";
   font-weight: 400;
   font-size: normal;
   font-display: swap;
-  src: url(../fonts/GTWalsheimPro-Regular.ttf);
+  src: url(fonts/GT-WalsheimPro-Regular.ttf);
 }
 @font-face {
   font-family: "GT Sectra Fine";
   font-weight: 400;
   font-size: normal;
   font-display: swap;
-  src: url(../fonts/GT-Sectra-Fine-Medium.ttf);
+  src: url(fonts/GT-Sectra-Fine-Medium.ttf);
 }
 * {
   font: 400 16px/120% "GT Walsheim Pro", sans-serif;
