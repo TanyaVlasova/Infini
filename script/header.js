@@ -1,8 +1,8 @@
-const menuPhone = document.querySelector('.js-toggle-menu');
-const dropDownMenu = document.querySelector('.js-drop-down-menu');
+const phoneMenu = document.querySelector('.js-phone-menu')
+const menuButton = phoneMenu.querySelector('.js-toggle-menu');
+const dropDownMenu = phoneMenu.querySelector('.js-drop-down-menu');
 
-menuPhone.addEventListener('click', () => {
-    dropDownMenu.classList.toggle('phone-menu-is-active');
-    menuPhone.classList.toggle('phone-menu-is-active');
-    menuPhone.innerHTML = (menuPhone.innerHTML == 'Menu') ? 'Close' : 'Menu';
+menuButton.addEventListener('click', () => {
+    phoneMenu.classList.toggle('phone-menu_active');
+    menuButton.innerHTML = (menuButton.innerHTML == 'Menu') ? 'Close' : 'Menu';
 });
