@@ -1,19 +1,28 @@
 header.header
     nav.nav
-        div.menu-phone
-            button.menu-phone__button Menu
-            div.
+        div.phone-menu.js-phone-menu
+            button.phone-menu__button.js-toggle-menu Menu
+            div.phone-menu__box.js-drop-down-menu
+                ul.phone-menu__list
+                    li.phone-menu__item
+                        a.phone-menu__link(href="index.html") Main
+                    li.phone-menu__item
+                        a.phone-menu__link(href="products.html") Products
+                    li.phone-menu__item
+                        a.phone-menu__link(href="about.html") About
+                    li.phone-menu__item
+                        a.phone-menu__link(href="contact.html") Contact
         ul.menu
                 li.menu__item
-                    a.menu__link(href="/infini")
+                    a.menu__link(href="index.html")
                         svg.menu__img
                             use(href="img/sprite.svg#logo")
                 li.menu__item
-                    a.menu__link(href="/products.html") Products
+                    a.menu__link(href="products.html") Products
                 li.menu__item
-                    a.menu__link(href="/about.html") About
+                    a.menu__link(href="about.html") About
                 li.menu__item
-                    a.menu__link(href="/contact.html") Contact
+                    a.menu__link(href="contact.html") Contact
         a.favorites(href="#")
             div.favorites__text Favorites
             div.favorites__block

@@ -5,6 +5,10 @@
     font: 400 16px/120% 'GT Walsheim Pro', sans-serif;
 }
 
+*:active{
+    -webkit-tap-highlight-color: transparent;
+}
+
 .body{
     padding-top: 140px;
     min-height: 100vh;

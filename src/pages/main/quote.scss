@@ -24,6 +24,50 @@
             transform: translateY(30px);
             transition: all 500ms;
         }
+
+        & span:nth-child(1){
+            transition-delay: 50ms;
+        }
+
+        & span:nth-child(2){
+            transition-delay: 100ms;
+        }
+
+        & span:nth-child(3){
+            transition-delay: 150ms;
+        }
+
+        & span:nth-child(4){
+            transition-delay: 200ms;
+        }
+
+        & span:nth-child(5){
+            transition-delay: 250ms;
+        }
+
+        & span:nth-child(6){
+            transition-delay: 300ms;
+        }
+
+        & span:nth-child(7){
+            transition-delay: 350ms;
+        }
+
+        & span:nth-child(8){
+            transition-delay: 400ms;
+        }
+
+        & span:nth-child(9){
+            transition-delay: 450ms;
+        }
+
+        & span:nth-child(10){
+            transition-delay: 500ms;
+        }
+
+        & span:nth-child(11){
+            transition-delay: 550ms;
+        }
     }
 }
 

@@ -41,4 +41,5 @@ function showFadeinBlocks() {
 
 findFadeinBlocks();
 document.addEventListener('scroll', showFadeinBlocks);
+document.addEventListener('DOMContentLoaded', showFadeinBlocks)
 /* -Fade-in block elements */

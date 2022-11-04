@@ -7,23 +7,31 @@
       <link rel="icon" href="img/icon.png" type="image/png"/>
       <title>Products</title>
       <script src="script/script.js" defer="defer"></script>
+      <script src="script/header.js" defer="defer"></script>
       <script src="script/products.js" defer="defer"></script>
     </head>
   <body class="body">
     <header class="header">
       <nav class="nav">
-        <div class="menu-phone">
-          <button class="menu-phone__button">Menu</button>
-          <div></div>
+        <div class="phone-menu js-phone-menu">
+          <button class="phone-menu__button js-toggle-menu">Menu</button>
+          <div class="phone-menu__box js-drop-down-menu">
+            <ul class="phone-menu__list">
+              <li class="phone-menu__item"><a class="phone-menu__link" href="index.html">Main</a></li>
+              <li class="phone-menu__item"><a class="phone-menu__link" href="products.html">Products</a></li>
+              <li class="phone-menu__item"><a class="phone-menu__link" href="about.html">About</a></li>
+              <li class="phone-menu__item"><a class="phone-menu__link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
         <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="/infini">
+          <li class="menu__item"><a class="menu__link" href="index.html">
               <svg class="menu__img">
                 <use href="img/sprite.svg#logo"></use>
               </svg></a></li>
-          <li class="menu__item"><a class="menu__link" href="/products.html">Products</a></li>
-          <li class="menu__item"><a class="menu__link" href="/about.html">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="/contact.html">Contact</a></li>
+          <li class="menu__item"><a class="menu__link" href="products.html">Products</a></li>
+          <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
         </ul><a class="favorites" href="#">
           <div class="favorites__text">Favorites</div>
           <div class="favorites__block">
@@ -36,7 +44,7 @@
           </svg></a>
       </nav>
     </header>
-    <div>products</div>
+    <div class="products container">"Product" section under development</div>
     <footer class="footer">
       <div class="footer__box">
         <p class="footer__text">Why Locomotive? © Infini Inc. 2022</p><a class="footer__link" href="#">

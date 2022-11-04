@@ -1,0 +1,11 @@
+.products{
+    margin: auto;
+    font-size: 50px;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .products{
+        font-size: 30px;
+    }
+}
