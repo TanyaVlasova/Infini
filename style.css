@@ -880,14 +880,26 @@ h1, h2, h3, h4, h5, h6 {
 .products {
   margin: auto;
   font-size: 50px;
+  text-align: center;
 }
 
+@media (max-width: 768px) {
+  .products {
+    font-size: 30px;
+  }
+}
 /* About */
 .about {
   margin: auto;
   font-size: 50px;
+  text-align: center;
 }
 
+@media (max-width: 768px) {
+  .about {
+    font-size: 30px;
+  }
+}
 /* Contact */
 .contact {
   width: 100%;
