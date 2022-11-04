@@ -408,7 +408,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   transition: opacity 300ms;
 }
-.favorites__text:hover::before {
+.favorites:hover .favorites__text::before {
   opacity: 1;
 }
 .favorites__block {
