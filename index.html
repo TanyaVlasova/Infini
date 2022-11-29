@@ -8,7 +8,7 @@
       <title>Infini</title>
       <script src="script/script.js" defer="defer"></script>
       <script src="script/header.js" defer="defer"></script>
-      <script src="script/main.js" defer="defer"></script>
+      <script src="script/index.js" defer="defer"></script>
     </head>
   <body class="body">
     <header class="header">
@@ -29,9 +29,9 @@
               <svg class="menu__img">
                 <use href="img/sprite.svg#logo"></use>
               </svg></a></li>
-          <li class="menu__item"><a class="menu__link" href="products.html">Products</a></li>
-          <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+          <li class="menu__item menu__item_underline"><a class="menu__link" href="products.html">Products</a></li>
+          <li class="menu__item menu__item_underline"><a class="menu__link" href="about.html">About</a></li>
+          <li class="menu__item menu__item_underline"><a class="menu__link" href="contact.html">Contact</a></li>
         </ul><a class="favorites" href="#">
           <div class="favorites__text">Favorites</div>
           <div class="favorites__block">
@@ -44,9 +44,9 @@
           </svg></a>
       </nav>
     </header>
-    <main class="main">
-      <section class="slideshow main__slideshow js-slideshow"></section>
-      <section class="design main__design js-design js-fadein-block">
+    <main class="index">
+      <section class="slideshow index__slideshow js-slideshow"></section>
+      <section class="design index__design js-design js-fadein-block">
         <div class="design__box container">
           <h2 class="design__title js-fadein-elem">Design <br> with nature</h2>
           <p class="design__text js-fadein-elem">
@@ -64,7 +64,7 @@
           <div class="design__image-box js-fadein-elem"><img class="design__image" src="img/nature.jpg" alt="Design with nature"/></div>
         </div>
       </section>
-      <section class="possibilities main__possibilities js-possibilities js-fadein-block">
+      <section class="possibilities index__possibilities js-possibilities js-fadein-block">
         <div class="possibilities__box container">
           <div class="possibilities__part">
             <h2 class="possibilities__title js-fadein-elem">Infinite <br> Possibilities</h2>
@@ -99,7 +99,7 @@
           </div>
         </div>
       </section>
-      <section class="values main__values js-values js-fadein-block">
+      <section class="values index__values js-values js-fadein-block">
         <div class="values__box container">
           <div class="values__img-box js-fadein-elem"><img class="values__img" src="img/values.jpg" alt="Values image"/></div>
           <div class="values__text-box">
@@ -121,7 +121,7 @@
           </div>
         </div>
       </section>
-      <section class="quote main__quote js-quote"><a class="quote__link" href="#"> <span>G</span><span>e</span><span>t</span><span>&ensp;</span><span>a</span><span>&ensp;</span><span>Q</span><span>u</span><span>o</span><span>t</span><span>e</span></a></section>
+      <section class="quote index__quote js-fadein-block"><a class="quote__link js-word js-fadein-elem" href="#"> <span>G</span><span>e</span><span>t</span><span>&ensp;</span><span>a</span><span>&ensp;</span><span>Q</span><span>u</span><span>o</span><span>t</span><span>e</span></a></section>
     </main>
     <footer class="footer">
       <div class="footer__box">

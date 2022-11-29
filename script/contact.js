@@ -1,8 +1,8 @@
 /* +Active input */
-const elements = document.forms.contactForm.elements;
+const elements = document.forms.requestForm.elements;
 
 for (let elem of elements) {
-    if (elem.matches('.contact__input') || elem.matches('.contact__textarea')) {
+    if (elem.matches('.request__input') || elem.matches('.request__textarea')) {
         elem.addEventListener('focus', event => {
             let label = event.target.parentElement.querySelector('label');
             label.classList.add('open-input');

@@ -1,6 +1,6 @@
 /* +Fade-in block elements */
 let fadeinThreshold = (document.documentElement.clientHeight <= 480 ||
-    document.documentElement.clientWidth <= 480) ? 80 : 300;
+    document.documentElement.clientWidth <= 480) ? 80 : 250;
 
 let fadeinBlocks = [];
 
@@ -43,3 +43,38 @@ findFadeinBlocks();
 document.addEventListener('scroll', showFadeinBlocks);
 document.addEventListener('DOMContentLoaded', showFadeinBlocks)
 /* -Fade-in block elements */
+
+/* +Change header text color */
+let body = document.body;
+let header = document.querySelector('.header');
+let footer = document.querySelector('.footer');
+
+function changeBodyColor() {
+    let page = window.location.pathname;
+    if (page == '/' || page == '/index.html' || page == '/products.html') {
+        body.classList.remove('black-page');
+        body.classList.add('white-page');
+    } else {
+        body.classList.remove('white-page');
+        body.classList.add('black-page');
+    }
+}
+
+changeBodyColor();
+/* -Change header text color */
+
+/* +Add a transition-delay to each letter */
+function addTransitionDelay() {
+    let words = document.querySelectorAll('.js-word');
+    console.log(words);
+    for (let word of words) {
+        let delay = 50;
+        for (let letter of word.children) {
+            letter.style.transitionDelay = `${delay}ms`;
+            delay += 50;
+        }
+    }    
+}
+
+addTransitionDelay();
+/* +Add a transition-delay to each letter */
