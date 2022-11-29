@@ -51,12 +51,12 @@ let footer = document.querySelector('.footer');
 
 function changeBodyColor() {
     let page = window.location.pathname;
-    if (page == '/' || page == '/index.html' || page == '/products.html') {
-        body.classList.remove('black-page');
-        body.classList.add('white-page');
-    } else {
+    if (page.includes('/about') || page.includes('/contact')) {
         body.classList.remove('white-page');
         body.classList.add('black-page');
+    } else {
+        body.classList.remove('black-page');
+        body.classList.add('white-page');
     }
 }
 
@@ -66,14 +66,13 @@ changeBodyColor();
 /* +Add a transition-delay to each letter */
 function addTransitionDelay() {
     let words = document.querySelectorAll('.js-word');
-    console.log(words);
     for (let word of words) {
         let delay = 50;
         for (let letter of word.children) {
             letter.style.transitionDelay = `${delay}ms`;
             delay += 50;
         }
-    }    
+    }
 }
 
 addTransitionDelay();
