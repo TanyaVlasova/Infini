@@ -1,0 +1,53 @@
+.browse-product{
+    height: 100vmin;
+    display: flex;
+
+    &__link{
+        margin: auto;
+        padding: 20px;
+        animation: translateLetters 1.2s infinite alternate ease-in-out paused 700ms;
+
+        &:hover{
+            animation-play-state: running;
+            span{
+                transform: translateY(-30px);
+            }
+        }
+    
+        & span{
+            display: inline-block;
+            font-size: 110px;
+            font-family: 'GT Sectra Fine', serif;
+            position: relative;
+            transform: translateY(30px);
+            transition: all 500ms;
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .browse-product__link span{
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 768px){
+    .browse-product__link{
+        animation-name: translateLettersPhone;
+
+        & span{
+            font-size: 50px;
+            transform: translateY(10px);            
+        }
+
+        &:hover span{
+            transform: translateY(-10px);
+        }
+    }   
+}
+
+@media (max-width: 480px){
+    .browse-product__link span{
+        font-size: 30px;
+    }    
+}

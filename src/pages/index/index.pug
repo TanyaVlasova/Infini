@@ -1,0 +1,14 @@
+doctype html 
+html(lang='en')
+    include components/head/head.pug
+    +head('Infini', 'script/index.js')
+    body.body
+        include components/header/header.pug
+        main.index
+            include components/arrow-up/arrow-up.pug
+            include pages/index/slideshow.pug
+            include pages/index/design.pug
+            include pages/index/possibilities.pug
+            include pages/index/values.pug
+            include pages/index/quote.pug
+        include components/footer/footer.pug

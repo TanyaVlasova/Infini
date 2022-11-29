@@ -10,11 +10,24 @@
 }
 
 .body{
-    padding-top: 140px;
     min-height: 100vh;
     height: 100%;
     display: flex;
     flex-direction: column;
+
+    & *{
+        color: inherit;
+    }
+}
+
+.white-page{
+    background-color: #fff;
+    color: #000;
+}
+
+.black-page{
+    background-color: #000;
+    color: #fff;
 }
 
 .container{
@@ -24,14 +37,14 @@
     margin: 0 auto;
 }
 
-.js-fadein-elem-visible{
-    transform: none;
-    opacity: 1;
-}
-
 .js-fadein-elem{
     transform: translateY(100px);
     opacity: 0;
+}
+
+.js-fadein-elem-visible{
+    transform: none;
+    opacity: 1;
 }
 
 @media (max-width: 1280px) {
@@ -39,18 +52,12 @@
         font-size: 14px;
     }
 
-    .body{
-        padding-top: 100px;
-    }
     .container{
         width: 850px;
     }
 }
 
 @media (max-width: 1024px) {
-    .body{
-        padding-top: 60px;
-    }
     .container{
         width: 680px;
     }
@@ -61,28 +68,24 @@
         width: 100%;
     }    
 }
+
 /* Переиспользуемые компоненты */
 @import '../components/button/button.scss';
 @import '../components/product-section/product-section.scss';
 
-/* Статичные блоки */
+/* Статичные элементы */
 @import '../components/header/header.scss';
 @import '../components/footer/footer.scss';
+@import '../components/arrow-up/arrow-up.scss';
 
-/* Main */
-@import '../scss/main.scss';
-@import '../pages/main/slideshow.scss';
-@import '../pages/main/design.scss';
-@import '../pages/main/possibilities.scss';
-@import '../pages/main/values.scss';
-@import '../pages/main/quote.scss';
+/* Index */
+@import '../pages/index/index.scss';
 
 /* Products */
-@import '../scss/products.scss';
+@import '../pages/products/products.scss';
 
 /* About */
-@import '../scss/about.scss';
+@import '../pages/about/about.scss';
 
 /* Contact */
-@import '../scss/contact.scss';
-@import '../pages/contact/get-in-touch.scss';
+@import '../pages/contact/contact.scss';

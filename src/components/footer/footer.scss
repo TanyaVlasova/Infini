@@ -27,6 +27,18 @@
     }
 }
 
+.white-page{
+    & .footer__img{
+        fill: #000;
+    }
+}
+
+.black-page{
+    & .footer__img{
+        fill: #fff;
+    }
+}
+
 @media (max-width: 1280px) {
     .footer{
         height: 100px;

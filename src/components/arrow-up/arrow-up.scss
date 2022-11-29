@@ -1,0 +1,17 @@
+.arrow-up{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+    transform: rotate(180deg);
+    z-index: 100;
+    opacity: 0;
+    fill: #5b5b5b;
+    transition: opacity 500ms;
+}
+
+.arrow-up-visible{
+    opacity: 1;
+    cursor: pointer;
+}

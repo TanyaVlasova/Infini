@@ -4,5 +4,11 @@ html(lang='en')
     +head('About', 'script/about.js')
     body.body
         include components/header/header.pug
-        div.about.container "About" section under development
+        main.about
+            include components/arrow-up/arrow-up.pug
+            svg.about__layer
+                use(href="img/sprite.svg#layer")
+            include pages/about/about-block1.pug
+            include pages/about/about-block2.pug
+            include pages/about/browse-product.pug
         include components/footer/footer.pug

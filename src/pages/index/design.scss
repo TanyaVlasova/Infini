@@ -9,24 +9,12 @@
         margin-bottom: 50px;
         font-size: 100px;
         font-family: 'GT Sectra Fine', serif;
-        //transform: translateY(100px);
-        //opacity: 0;
-        //transition: transform 700ms ease-in-out 200ms, opacity 700ms ease-in-out 200ms;
     }
 
     &__text{
         width: 300px;
         margin-bottom: 40px;
         line-height: 150%;
-        //transform: translateY(100px);
-        //opacity: 0;
-        //transition: transform 700ms ease-in-out 300ms, opacity 700ms ease-in-out 300ms; 
-    }
-
-    &__button{
-        //transform: translateY(100px);
-        //opacity: 0;
-        //transition: transform 700ms ease-in-out 400ms, opacity 700ms ease-in-out 400ms;
     }
 
     &__image-box{
@@ -35,9 +23,6 @@
         top: 0;
         right: 30px;
         z-index: -1;
-        //transform: translateY(100px);
-        //opacity: 0;
-        //transition: transform 700ms ease-in-out 900ms, opacity 700ms ease-in-out 900ms;
     }
 
     &__image{

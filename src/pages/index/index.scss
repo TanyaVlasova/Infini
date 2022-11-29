@@ -1,4 +1,10 @@
-.main{
+@import 'slideshow.scss';
+@import 'design.scss';
+@import 'possibilities.scss';
+@import 'values.scss';
+@import 'quote.scss';
+
+.index{
     &__slideshow,
     &__possibilities,
     &__values{
@@ -11,7 +17,7 @@
 }
 
 @media (max-width: 1280px) {
-    .main{
+    .index{
         &__design{
             margin-bottom: 200px;
         }
@@ -19,7 +25,7 @@
 }
 
 @media (max-width: 768px) {
-    .main{
+    .index{
         &__slideshow,
         &__design,
         &__possibilities,

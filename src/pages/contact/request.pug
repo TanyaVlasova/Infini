@@ -1,0 +1,32 @@
+section.request.contact__request.js-fadein-block
+    div.request__box.container
+        div.request__text-part
+            h1.request__title.js-fadein-elem Get in <br> Touch
+            p.request__text.js-fadein-elem
+                | We know every stone is a piece of art — now, 
+                | we want to help you procure your art pieces. 
+                | If you have a question, concern or want 
+                | to connect, please fill the form.
+            p.request__address.js-fadein-elem
+                | 19014 64th Ave S, Kent <br> WA 98032
+            div.request__phone.js-fadein-elem
+                a.request__phone-link(href="tel:+18036913667") 1 (803) 691 3667
+        div.request__form-part
+            form.request__form(action="" method="post" name="requestForm" autocomplete="off")
+                div.request__entry-field.js-fadein-elem
+                    label.request__label(for="name") * Name
+                    input.request__input(type="text" id="name" name="name" autocomplete="off" required)
+                div.request__entry-field.js-fadein-elem
+                    label.request__label(for="email") * Email
+                    input.request__input(type="text" id="email" name="email" autocomplete="off" required)
+                div.request__entry-field.js-fadein-elem
+                    label.request__label(for="company") Company
+                    input.request__input(type="text" id="company" name="company" autocomplete="off")
+                div.request__entry-field.js-fadein-elem
+                    label.request__label(for="phone") Phone
+                    input.request__input(type="text" id="phone" name="phone" autocomplete="off")
+                div.request__message.js-fadein-elem
+                    label.request__label(for="message") * Message
+                    textarea.request__textarea(id="message" name="message" required)
+                div.request__send.js-fadein-elem
+                    input.request__send-button(type="button" value="Send request")

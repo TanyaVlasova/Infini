@@ -4,5 +4,7 @@ html(lang='en')
     +head('Contact', 'script/contact.js')
     body.body
         include components/header/header.pug
-        include pages/contact/get-in-touch.pug
+        main.contact
+            include components/arrow-up/arrow-up.pug
+            include pages/contact/request.pug
         include components/footer/footer.pug
