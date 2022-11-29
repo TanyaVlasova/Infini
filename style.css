@@ -821,6 +821,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .quote__link {
   margin: auto;
+  padding: 20px;
   text-align: center;
   animation: translateLetters 1.2s infinite alternate ease-in-out paused 700ms;
 }
@@ -858,7 +859,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1024px) {
   .quote__link span {
-    font-size: 90px;
+    font-size: 80px;
   }
 }
 @media (max-width: 768px) {
@@ -1173,8 +1174,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 768px) {
+  .browse-product__link {
+    animation-name: translateLettersPhone;
+  }
   .browse-product__link span {
     font-size: 50px;
+    transform: translateY(10px);
+  }
+  .browse-product__link:hover span {
+    transform: translateY(-10px);
   }
 }
 @media (max-width: 480px) {
