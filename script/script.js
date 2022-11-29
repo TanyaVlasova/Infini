@@ -77,3 +77,22 @@ function addTransitionDelay() {
 
 addTransitionDelay();
 /* +Add a transition-delay to each letter */
+
+/* +Scroll up */
+let arrowUp = document.querySelector('.js-arrow-up');
+arrowUp.addEventListener('click', event => {
+    if (!arrowUp.classList.contains('arrow-up-visible')) return;
+    window.scroll({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+document.addEventListener('scroll', event => {
+    if (window.pageYOffset > window.innerHeight) {
+        arrowUp.classList.add('arrow-up-visible');
+    } else {
+        arrowUp.classList.remove('arrow-up-visible');
+    }
+});
+/* -Scroll up */

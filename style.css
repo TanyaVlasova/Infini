@@ -283,6 +283,24 @@ h1, h2, h3, h4, h5, h6 {
     background-size: 800px;
   }
 }
+.arrow-up {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  transform: rotate(180deg);
+  z-index: 1000;
+  opacity: 0;
+  fill: #5b5b5b;
+  transition: opacity 500ms;
+}
+
+.arrow-up-visible {
+  opacity: 1;
+  cursor: pointer;
+}
+
 /* Переиспользуемые стили */
 .subtitle {
   font-size: 100px;
