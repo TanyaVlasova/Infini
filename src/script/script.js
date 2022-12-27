@@ -13,7 +13,8 @@ function findFadeinBlocks() {
         let delay = 200;
         for (const elem of blockInfo.elements) {
             elem.style.transition = `transform 700ms ease-in-out ${delay}ms, 
-                    opacity 700ms ease-in-out ${delay}ms`;
+                                    opacity 700ms ease-in-out ${delay}ms, 
+                                    color 300ms`;
             delay += 100;
         }
         fadeinBlocks.push(blockInfo);

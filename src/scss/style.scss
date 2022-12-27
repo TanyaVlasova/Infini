@@ -5,11 +5,11 @@
     font: 400 16px/120% 'GT Walsheim Pro', sans-serif;
 }
 
-*:active{
+*:active {
     -webkit-tap-highlight-color: transparent;
 }
 
-.body{
+.body {
     min-height: 100vh;
     height: 100%;
     display: flex;
@@ -20,57 +20,63 @@
     }
 }
 
-.white-page{
+.white-page {
     background-color: #fff;
     color: #000;
 }
 
-.black-page{
+.black-page {
     background-color: #000;
     color: #fff;
 }
 
-.container{
+.container {
     width: 1260px;
     height: 100%;
     padding: 0 30px;
     margin: 0 auto;
 }
 
-.js-fadein-elem{
+.js-fadein-elem {
     transform: translateY(100px);
     opacity: 0;
 }
 
-.js-fadein-elem-visible{
+.js-fadein-elem-visible {
     transform: none;
     opacity: 1;
 }
 
 @media (max-width: 1280px) {
-    *{
+    * {
         font-size: 14px;
     }
 
-    .container{
+    .container {
         width: 850px;
     }
 }
 
 @media (max-width: 1024px) {
-    .container{
+    .container {
         width: 680px;
     }
 }
 
 @media (max-width: 768px) {
-    .container{
+    .container {
         width: 100%;
     }    
 }
 
+@media (max-width: 480px) {
+    main {
+        padding-top: 46px;
+    }   
+}
+
 /* Переиспользуемые компоненты */
-@import '../components/button/button.scss';
+@import '../components/link/link.scss';
 @import '../components/product-section/product-section.scss';
 
 /* Статичные элементы */

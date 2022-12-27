@@ -143,23 +143,24 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 }
-/* Переиспользуемые компоненты */
-.button-wrapper {
-  display: inline-block;
+@media (max-width: 480px) {
+  main {
+    padding-top: 46px;
+  }
 }
-
-.button {
-  cursor: pointer;
+/* Переиспользуемые компоненты */
+.link {
+  display: inline-block;
   text-transform: uppercase;
   color: #d3d3d3;
-  transition: color 300ms;
   position: relative;
   background-color: transparent;
+  cursor: pointer;
 }
-.button:hover {
+.link:hover {
   color: #8c8c8c;
 }
-.button:hover .arrow-right {
+.link:hover .arrow-right {
   right: -65px;
 }
 
@@ -299,12 +300,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .phone-menu {
   display: none;
-  position: relative;
 }
 .phone-menu__button {
   background-color: transparent;
   position: fixed;
-  z-index: 1000;
+  z-index: 1001;
 }
 .phone-menu__box {
   width: 100%;
@@ -325,21 +325,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: auto 0;
 }
 .phone-menu__item {
-  transform: translateX(-100px);
+  transform: translateX(-200px);
   opacity: 0;
-  transition: transform 500ms, opacity 800ms;
-}
-.phone-menu__item:nth-child(1) {
-  transition-delay: 500ms;
-}
-.phone-menu__item:nth-child(2) {
-  transition-delay: 600ms;
-}
-.phone-menu__item:nth-child(3) {
-  transition-delay: 700ms;
-}
-.phone-menu__item:nth-child(4) {
-  transition-delay: 800ms;
+  transition: transform 300ms, opacity 500ms;
 }
 .phone-menu__item:not(:last-child) {
   margin-bottom: 20px;
@@ -359,6 +347,19 @@ h1, h2, h3, h4, h5, h6 {
 .phone-menu_active .phone-menu__item {
   transform: translateX(0);
   opacity: 1;
+}
+
+.phone-menu_active .phone-menu__item:nth-child(1) {
+  transition-delay: 500ms;
+}
+.phone-menu_active .phone-menu__item:nth-child(2) {
+  transition-delay: 600ms;
+}
+.phone-menu_active .phone-menu__item:nth-child(3) {
+  transition-delay: 700ms;
+}
+.phone-menu_active .phone-menu__item:nth-child(4) {
+  transition-delay: 800ms;
 }
 
 .menu {
@@ -474,6 +475,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .header {
     justify-content: end;
+    background-color: #fff;
   }
 
   .favorites {
@@ -490,7 +492,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 480px) {
   .header {
-    padding: 20px;
+    padding: 13px 20px;
+    position: fixed;
+    z-index: 1000;
   }
 
   .phone-menu {
@@ -702,7 +706,7 @@ h1, h2, h3, h4, h5, h6 {
   .design__text {
     width: 80%;
   }
-  .design__button {
+  .design__link {
     margin-bottom: 30px;
   }
   .design__image-box {
@@ -728,7 +732,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 150%;
   margin-bottom: 40px;
 }
-.possibilities__button {
+.possibilities__link {
   margin-bottom: 60px;
 }
 
@@ -776,7 +780,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 40px 100px;
   line-height: 150%;
 }
-.values__button {
+.values__link {
   margin-left: 100px;
 }
 
@@ -788,7 +792,7 @@ h1, h2, h3, h4, h5, h6 {
   .values__text {
     margin-left: 60px;
   }
-  .values__button {
+  .values__link {
     margin-left: 60px;
   }
 }
@@ -800,7 +804,7 @@ h1, h2, h3, h4, h5, h6 {
   .values__title {
     font-size: 50px;
   }
-  .values__text, .values__button {
+  .values__text, .values__link {
     margin-left: 30px;
   }
 }
@@ -821,7 +825,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 80%;
     margin-left: 0;
   }
-  .values__button {
+  .values__link {
     margin-left: 0;
   }
 }

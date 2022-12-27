@@ -1,14 +1,10 @@
-.button-wrapper{
+.link{
     display: inline-block;
-}
-
-.button{
-    cursor: pointer;
     text-transform: uppercase;
     color: #d3d3d3;
-    transition: color 300ms;
     position: relative;
     background-color: transparent;
+    cursor: pointer;
 
     &:hover{
         color: #8c8c8c;

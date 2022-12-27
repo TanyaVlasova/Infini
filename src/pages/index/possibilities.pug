@@ -1,4 +1,4 @@
-include ../../components/button/button.pug
+include ../../components/link/link.pug
 include ../../components/product-section/product-section.pug
 section.possibilities.index__possibilities.js-possibilities.js-fadein-block
     div.possibilities__box.container
@@ -11,7 +11,7 @@ section.possibilities.index__possibilities.js-possibilities.js-fadein-block
                 | of those who harvested it, and the breathtaking beauty
                 | it will become. Each time someone brings INFINI into
                 | their home, we hope they see that story, too.
-            +button('See our catalog', 'js-fadein-elem', 'possibilities__button')
+            +link('See our catalog', 'products.html', 'js-fadein-elem possibilities__link')
             +product-section('Granite', '#', 'product-section-granite', 'js-fadein-elem')
         div.possibilities__part
             +product-section('Exotic', '#', 'product-section-exotic ', 'product-section-to-right js-fadein-elem')

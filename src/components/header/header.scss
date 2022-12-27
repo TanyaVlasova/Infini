@@ -13,12 +13,11 @@
 
 .phone-menu{
     display: none;
-    position: relative;
 
     &__button{
         background-color: transparent;
         position: fixed;
-        z-index: 1000;
+        z-index: 1001;
     }
 
     &__box{
@@ -42,25 +41,9 @@
     }
 
     &__item{
-        transform: translateX(-100px);
+        transform: translateX(-200px);
         opacity: 0;
-        transition: transform 500ms, opacity 800ms;
-
-        &:nth-child(1){
-            transition-delay: 500ms;
-        }
-
-        &:nth-child(2){
-            transition-delay: 600ms;
-        }
-
-        &:nth-child(3){
-            transition-delay: 700ms;
-        }
-
-        &:nth-child(4){
-            transition-delay: 800ms;
-        }
+        transition: transform 300ms, opacity 500ms;
     }
 
     &__item:not(:last-child){
@@ -83,6 +66,24 @@
 .phone-menu_active .phone-menu__item{
     transform: translateX(0);
     opacity: 1;
+}
+
+.phone-menu_active .phone-menu__item {
+    &:nth-child(1){
+        transition-delay: 500ms;
+    }
+
+    &:nth-child(2){
+        transition-delay: 600ms;
+    }
+
+    &:nth-child(3){
+        transition-delay: 700ms;
+    }
+
+    &:nth-child(4){
+        transition-delay: 800ms;
+    }
 }
 
 .menu{
@@ -210,10 +211,6 @@
     }
 }
 
-@media (min-width: 1024px) {
-
-}
-
 @media (max-width: 1280px) {
     .header{
         padding: 30px 40px;
@@ -229,6 +226,7 @@
 @media (max-width: 768px) {
     .header{
         justify-content: end;
+        background-color: #fff;
     }
 
     .favorites{
@@ -247,7 +245,9 @@
 
 @media (max-width: 480px) {
     .header{
-        padding: 20px;
+        padding: 13px 20px;
+        position: fixed;
+        z-index: 1000;
     }
 
     .phone-menu{
